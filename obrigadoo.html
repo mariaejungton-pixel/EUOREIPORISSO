@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#16372f" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="Compra confirmada — acesse o Eu Orei por Isso e comece sua jornada." />
+  <title>Compra confirmada | Eu Orei por Isso</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --ink:#19332c;
+      --deep:#12322b;
+      --forest:#1c473c;
+      --sage:#8fa99b;
+      --sage-2:#dce7df;
+      --cream:#f7f3ea;
+      --paper:#fffdf8;
+      --gold:#b88c50;
+      --muted:#6e7b75;
+      --line:rgba(25,51,44,.12);
+      --shadow:0 24px 70px rgba(20,49,41,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 85% 12%, rgba(143,169,155,.28), transparent 30%),
+        radial-gradient(circle at 12% 88%, rgba(184,140,80,.10), transparent 26%),
+        var(--cream);
+      color:var(--ink);
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(980px,calc(100% - 36px));margin:auto}
+    .topbar{padding:24px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--deep)}
+    .brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff}
+    main{padding:34px 0 70px}
+    .card{
+      position:relative;
+      overflow:hidden;
+      background:rgba(255,253,248,.93);
+      border:1px solid var(--line);
+      border-radius:34px;
+      box-shadow:var(--shadow);
+      padding:58px;
+    }
+    .card:after{
+      content:"";
+      position:absolute;
+      width:360px;height:360px;border-radius:50%;
+      background:radial-gradient(circle,rgba(220,231,223,.85),rgba(220,231,223,0) 70%);
+      right:-100px;top:-100px;pointer-events:none;
+    }
+    .hero{position:relative;z-index:1;text-align:center;max-width:760px;margin:0 auto}
+    .check{
+      width:78px;height:78px;border-radius:50%;margin:0 auto 24px;
+      display:grid;place-items:center;background:var(--deep);color:#fff;
+      font-size:2rem;box-shadow:0 16px 34px rgba(18,50,43,.22)
+    }
+    .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:12px}
+    h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08;margin:0;color:var(--ink)}
+    h1{font-size:clamp(2.7rem,7vw,5rem);letter-spacing:-.04em}
+    h1 span{color:var(--forest)}
+    .lead{font-size:1.08rem;color:var(--muted);max-width:650px;margin:22px auto 30px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:.65rem;
+      padding:17px 25px;border-radius:999px;background:var(--deep);color:#fff;
+      font-weight:700;box-shadow:0 12px 30px rgba(18,50,43,.22);transition:.2s ease
+    }
+    .btn:hover{transform:translateY(-2px);background:#0d2923}
+    .micro{font-size:.82rem;color:#78847f;margin-top:13px}
+    .divider{height:1px;background:var(--line);margin:46px 0}
+    .steps-title{text-align:center;margin-bottom:28px}
+    .steps-title h2{font-size:clamp(1.8rem,4vw,2.65rem)}
+    .steps-title p{color:var(--muted);margin:10px auto 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{background:#f3f5f0;border:1px solid var(--line);border-radius:24px;padding:25px}
+    .num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff;font-weight:800;margin-bottom:20px}
+    .step h3{font-size:1.25rem;margin-bottom:8px}
+    .step p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
+    .install{
+      margin-top:18px;background:var(--deep);color:#fff;border-radius:26px;
+      padding:27px 30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center
+    }
+    .install h3{color:#fff;font-size:1.45rem;margin-bottom:7px}
+    .install p{margin:0;color:#c7d3cf;font-size:.92rem}
+    .badge{white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:12px 16px;border-radius:999px;font-size:.83rem;font-weight:700}
+    .support{text-align:center;color:var(--muted);font-size:.86rem;margin-top:24px}
+    footer{text-align:center;padding:28px 0;color:#829088;font-size:.78rem}
+    @media(max-width:760px){
+      .card{padding:38px 22px;border-radius:28px}.grid{grid-template-columns:1fr}.install{grid-template-columns:1fr;text-align:center}.badge{justify-self:center}.divider{margin:36px 0}main{padding-top:16px}
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1431415998325617');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1431415998325617&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!--
+    IMPORTANTE SOBRE O EVENTO PURCHASE:
+    Se a Kiwify já envia a compra ao Meta Pixel/CAPI, NÃO dispare Purchase aqui para evitar duplicidade.
+    Se esta página for o único rastreamento da compra, você pode adicionar:
+    fbq('track', 'Purchase', {value: 37.00, currency: 'BRL'});
+  -->
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="https://eu-orei-por-isso.vercel.app/">
+        <span class="brand-mark">✦</span>
+        <span>Eu Orei por Isso</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="card">
+        <div class="hero">
+          <div class="check">✓</div>
+          <div class="eyebrow">Tudo certo por aqui</div>
+          <h1>Sua jornada <span>começa agora.</span></h1>
+          <p class="lead">Obrigada por escolher guardar suas orações, sua espera e as respostas que fazem parte da sua história. Seu acesso ao <strong>Eu Orei por Isso</strong> está logo abaixo.</p>
+
+          <a class="btn" href="https://eu-orei-por-isso.vercel.app/#today">
+            Acessar meu Eu Orei por Isso →
+          </a>
+          <div class="micro">Dica: salve esta página ou o acesso nos favoritos do seu navegador.</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="steps-title">
+          <div class="eyebrow">Primeiros passos</div>
+          <h2>Em poucos minutos você já pode começar.</h2>
+          <p>Use pelo navegador ou deixe o Eu Orei por Isso na tela inicial do seu celular.</p>
+        </div>
+
+        <div class="grid">
+          <article class="step">
+            <div class="num">1</div>
+            <h3>Abra seu acesso</h3>
+            <p>Toque no botão acima e entre na página “Hoje” para iniciar sua primeira pausa.</p>
+          </article>
+
+          <article class="step">
+            <div class="num">2</div>
+            <h3>Comece sua jornada</h3>
+            <p>Registre como está seu coração, leia a reflexão e escreva a oração que deseja acompanhar.</p>
+          </article>
+
+          <article class="step">
+            <div class="num">3</div>
+            <h3>Salve no celular</h3>
+            <p>No iPhone, use Compartilhar → Adicionar à Tela de Início. No Android, escolha Instalar ou Adicionar à tela inicial.</p>
+          </article>
+        </div>
+
+        <div class="install">
+          <div>
+            <h3>🌿 Transforme o acesso em um “aplicativo” no celular</h3>
+            <p>Assim você encontra o Eu Orei por Isso com um toque, sem precisar procurar o link todos os dias.</p>
+          </div>
+          <div class="badge">Sem baixar pela loja</div>
+        </div>
+
+        <p class="support">Caso tenha comprado pela Kiwify, mantenha também o e-mail da compra salvo, pois ele contém os dados do seu pedido.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Eu Orei por Isso • Seu diário de oração, espera e respostas.
+  </footer>
+</body>
+</html>
